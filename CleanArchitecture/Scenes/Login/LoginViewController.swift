@@ -48,6 +48,22 @@ final class LoginViewController: UIViewController, Bindable {
         } else {
             view.backgroundColor = .white
         }
+//      $parent.subscribe(onNext: { item in
+//                  guard let item = item else { return }
+//                  self.realm.filterNil().bind { r in
+//                      do {
+//                          // Create new
+//                          try r.write({
+//                              r.add(item, update: .all)
+//                          })
+//                      } catch {
+//                          Logger.logMessage(error.localizedDescription)
+//                      }
+//                  }.disposed(by:self.disposeBag)
+//              }, onError: { error in
+//                  print("\(error)")
+//              }).disposed(by: disposeBag)
+
     }
 
     func bindViewModel() {
